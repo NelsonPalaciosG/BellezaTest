@@ -1,18 +1,80 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace BellezaTestApp.Models
 {
-    public class Producto
+    public class Producto : INotifyPropertyChanged
     {
-        public int Id { get; set; }
 
-        public string Descripcion { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        public decimal PrecioVenta { get; set; }
+        public void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string nombre = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nombre));
+        }
 
-        public string Color { get; set; }
+        private bool isBusy = false;
+
+        public bool Isbusy
+        {
+            get { return isBusy; }
+            set
+            {
+                isBusy = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private int id;
+
+        public int Id 
+        {
+            get { return id; }
+            set
+            {
+                id = value;
+                OnPropertyChanged();
+            }
+           
+        }
+
+        private string descripcion;
+
+        public string Descripcion
+        {
+            get { return descripcion; }
+            set
+            {
+                descripcion = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private decimal precioVenta;
+
+        public decimal PrecioVenta
+        {
+            get { return precioVenta; }
+            set
+            {
+                precioVenta = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string color;
+
+        public string Color
+        {
+            get { return color; }
+            set
+            {
+                color = value;
+                OnPropertyChanged();
+            }
+        }
 
     }
 }
