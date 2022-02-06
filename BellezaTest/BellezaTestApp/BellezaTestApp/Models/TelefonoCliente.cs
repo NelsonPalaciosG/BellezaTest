@@ -6,5 +6,7 @@ namespace BellezaTestApp.Models
 {
     public class TelefonoCliente
     {
+        public string Telefono { get; set; }
+
     }
 }

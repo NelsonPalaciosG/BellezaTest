@@ -11,8 +11,5 @@ namespace BellezaTestApp.Models
         public string Descripcion { get; set; }
 
         public string Direccion { get; set; }
-
-
-
     }
 }

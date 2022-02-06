@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BellezaTestApp.Data
 {
-   public class DatabaseContext
+    public class DatabaseContext
     {
 
     }
