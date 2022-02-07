@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Text;
+﻿using System.ComponentModel;
 
 namespace BellezaTestApp.Models
 {
@@ -29,7 +26,7 @@ namespace BellezaTestApp.Models
 
         private int id;
 
-        public int Id 
+        public int Id
         {
             get { return id; }
             set
@@ -37,7 +34,7 @@ namespace BellezaTestApp.Models
                 id = value;
                 OnPropertyChanged();
             }
-           
+
         }
 
         private string descripcion;

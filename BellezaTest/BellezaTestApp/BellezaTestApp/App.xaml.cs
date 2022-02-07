@@ -1,7 +1,5 @@
-﻿using System;
+﻿using BellezaTestApp.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using BellezaTestApp.Views;
 
 namespace BellezaTestApp
 {
@@ -11,7 +9,7 @@ namespace BellezaTestApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ProductoPage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

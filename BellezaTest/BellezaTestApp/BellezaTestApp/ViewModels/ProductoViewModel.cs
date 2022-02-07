@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using BellezaTestApp.Models;
 using BellezaTestApp.Services;
-using BellezaTestApp.Models;
 using System.Collections.ObjectModel;
-using Xamarin.Forms;
-using System.Threading.Tasks;
 
 namespace BellezaTestApp.ViewModels
 {
