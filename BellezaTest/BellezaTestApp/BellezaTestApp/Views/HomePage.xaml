@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="Acerca de"
-             x:Class="BellezaTestApp.MainPage">
-
+              Title="Acerca de"
+             x:Class="BellezaTestApp.Views.HomePage">
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Desarrollado con Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
@@ -15,11 +14,10 @@
                 <FormattedString>
                     <FormattedString.Spans>
                         <Span Text="Vea más en "/>
-                        <Span Text=" https://github.com/NelsonPalaciosG" FontAttributes="Bold"/>
+                        <Span Text="https://github.com/NelsonPalaciosG" FontAttributes="Bold"/>
                     </FormattedString.Spans>
                 </FormattedString>
             </Label.FormattedText>
         </Label>
     </StackLayout>
-
 </ContentPage>

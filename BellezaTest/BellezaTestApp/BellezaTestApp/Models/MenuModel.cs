@@ -4,13 +4,14 @@ using System.Text;
 
 namespace BellezaTestApp.Models
 {
-    public class Menu
+    public class MenuModel
     {
-        public string Icon { get; set; }
 
         public string Title { get; set; }
 
-        public string PageName { get; set; }
+        public string Icon { get; set; }
+
+        public Type TargetPage { get; set; }
     }
 
 }
